@@ -2,7 +2,7 @@ require.config({
   hbs:{
     disableHelpers: true,
     disableI18n: true,
-    templateExtension: "html"
+    templateExtension: 'html'
   },
   paths: {
     jquery: '../components/jquery/jquery',

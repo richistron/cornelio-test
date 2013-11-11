@@ -5,7 +5,7 @@ define(function (require) {
   var App = (function() {
 
     // constructor
-    function App(){
+    function App() {
 
       // context ref
       var _this = this;
@@ -14,20 +14,20 @@ define(function (require) {
       this.Router = new (this.Backbone.Router.extend({
 
         routes: {
-          '':'home',
+          '': 'home',
           '*notFound': 'notFound'
         },
 
-        home: function(){
+        home: function() {
           var tpl = require('hbs!../templates/allo');
           _this.$('#main-container').html(tpl());
         },
 
-        notFound: function(){
+        notFound: function() {
           _this.Router.navigate('/');
         }
 
-      }));
+      }))();
 
       // hitory backbone start
       this.Backbone.history.start();
