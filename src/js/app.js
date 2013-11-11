@@ -20,11 +20,14 @@ define(function (require) {
 
         home: function() {
           var tpl = require('hbs!../templates/allo');
-          _this.$('#main-container').html(tpl());
+          _this.$('.progress-bar').width('100%');
+          setTimeout(function(){
+            _this.$('#main-container').html(tpl());
+          },1000);
         },
 
         notFound: function() {
-          _this.Router.navigate('/');
+          _this.Router.navigate('#/');
         }
 
       }))();
