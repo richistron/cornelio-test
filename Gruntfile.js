@@ -1,4 +1,4 @@
-// Generated on 2013-11-11 using generator-cornelio 0.0.2
+// Generated on 2013-11-12 using generator-cornelio 0.0.2
 'use strict';
 
 module.exports = function (grunt) {
