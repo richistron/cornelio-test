@@ -1,4 +1,4 @@
-// Generated on 2014-02-09 using generator-cornelio 0.0.5
+// Generated on 2014-05-25 using generator-cornelio 0.0.7
 'use strict';
 
 module.exports = function (grunt) {
@@ -13,7 +13,7 @@ module.exports = function (grunt) {
       build: 'build'
     },
     watch: {
-      compass: {
+      less: {
         files: ['<%= yeoman.app %>/css/{,*/}*.{less,css}'],
         tasks: ['less', 'autoprefixer']
       },
