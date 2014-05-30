@@ -3,9 +3,6 @@ My Awesome App v0.0.0 [![Build Status](https://travis-ci.org/richistron/cornelio
 
 Cornelio generator is a flavored version of generator-webapp. Includes different packages and conventions.
 
-### Deploy
-
-http://richistron.github.io/cornelio-test/
 
 ### What is different form others?
 
