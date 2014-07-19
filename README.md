@@ -1,8 +1,7 @@
-My Awesome App v0.0.0 [![Build Status](https://travis-ci.org/richistron/cornelio-test.png?branch=master)](https://travis-ci.org/richistron/cornelio-test)
+My Awesome App v0.0.0
 =====================
 
 Cornelio generator is a flavored version of generator-webapp. Includes different packages and conventions.
-
 
 ### What is different form others?
 
