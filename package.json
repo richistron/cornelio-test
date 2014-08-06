@@ -28,6 +28,11 @@
     "grunt-usemin": "^0.1.13",
     "time-grunt": "^0.2.10"
   },
+  "scripts": {
+    "start": "./start",
+    "test": "grunt test",
+    "postinstall": "./install"
+  },
   "engines": {
     "node": "0.10.x"
   }
