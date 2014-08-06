@@ -27,5 +27,8 @@
     "grunt-svgmin": "^0.3.1",
     "grunt-usemin": "^0.1.13",
     "time-grunt": "^0.2.10"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
