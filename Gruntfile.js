@@ -1,4 +1,4 @@
-// Generated on 2014-06-15 using generator-cornelio 0.0.7
+// Generated on with generetor-cornelio
 'use strict';
 
 module.exports = function (grunt) {
@@ -14,15 +14,24 @@ module.exports = function (grunt) {
     },
     watch: {
       less: {
+<<<<<<< HEAD
         files: ['<%= yeoman.app %>/css/{,*/}*.{less,css}'],
         tasks: ['less', 'autoprefixer']
       },
       styles: {
         files: ['<%= yeoman.app %>/css/{,*/}*.css'],
+=======
+        files: ['<% yeoman.app %>/css/{,*/}*.{less,css}'],
+        tasks: ['less', 'autoprefixer']
+      },
+      styles: {
+        files: ['<% yeoman.app %>/css/{,*/}*.css'],
+>>>>>>> first commit
         tasks: ['copy:styles', 'autoprefixer']
       },
       livereload: {
         options: {
+<<<<<<< HEAD
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
@@ -30,6 +39,15 @@ module.exports = function (grunt) {
           '.tmp/css/{,*/}*.css',
           '{.tmp,<%= yeoman.app %>}/js/{,*/}*.js',
           '<%= yeoman.app %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+=======
+          livereload: '<% connect.options.livereload %>'
+        },
+        files: [
+          '<% yeoman.app %>/**/*.html',
+          '.tmp/css/{,*/}*.css',
+          '{.tmp,<% yeoman.app %>}/js/{,*/}*.js',
+          '<% yeoman.app %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+>>>>>>> first commit
         ]
       }
     },
@@ -45,7 +63,11 @@ module.exports = function (grunt) {
           open: true,
           base: [
             '.tmp',
+<<<<<<< HEAD
             '<%= yeoman.app %>'
+=======
+            '<% yeoman.app %>'
+>>>>>>> first commit
           ]
         }
       },
@@ -54,14 +76,22 @@ module.exports = function (grunt) {
           base: [
             '.tmp',
             'test',
+<<<<<<< HEAD
             '<%= yeoman.app %>'
+=======
+            '<% yeoman.app %>'
+>>>>>>> first commit
           ]
         }
       },
       build: {
         options: {
           open: true,
+<<<<<<< HEAD
           base: '<%= yeoman.build %>'
+=======
+          base: '<% yeoman.build %>'
+>>>>>>> first commit
         }
       }
     },
@@ -71,8 +101,13 @@ module.exports = function (grunt) {
           dot: true,
           src: [
             '.tmp',
+<<<<<<< HEAD
             '<%= yeoman.build %>/*',
             '!<%= yeoman.build %>/.git*'
+=======
+            '<% yeoman.build %>/*',
+            '!<% yeoman.build %>/.git*'
+>>>>>>> first commit
           ]
         }]
       },
@@ -84,9 +119,15 @@ module.exports = function (grunt) {
       },
       all: [
         'Gruntfile.js',
+<<<<<<< HEAD
         '<%= yeoman.app %>/js/{,*/}*.js',
         '!<%= yeoman.app %>/js/vendor/*',
         '!<%= yeoman.app %>/components/*',
+=======
+        '<% yeoman.app %>/js/{,*/}*.js',
+        '!<% yeoman.app %>/js/vendor/*',
+        '!<% yeoman.app %>/components/*',
+>>>>>>> first commit
         'test/spec/{,*/}*.js'
       ]
     },
@@ -94,7 +135,11 @@ module.exports = function (grunt) {
       all: {
         options: {
           run: true,
+<<<<<<< HEAD
           urls: ['http://<%= connect.test.options.hostname %>:<%= connect.test.options.port %>/index.html']
+=======
+          urls: ['http://<% connect.test.options.hostname %>:<% connect.test.options.port %>/index.html']
+>>>>>>> first commit
         }
       }
     },
@@ -132,7 +177,11 @@ module.exports = function (grunt) {
         // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
         options: {
           // `name` and `out` is set by grunt-usemin
+<<<<<<< HEAD
           baseUrl: '<%= yeoman.app %>/js',
+=======
+          baseUrl: '<% yeoman.app %>/js',
+>>>>>>> first commit
           optimize: 'none',
           // TODO: Figure out how to make sourcemaps work with grunt-usemin
           // https://github.com/yeoman/grunt-usemin/issues/30
@@ -150,16 +199,24 @@ module.exports = function (grunt) {
       build: {
         files: {
           src: [
+<<<<<<< HEAD
             '<%= yeoman.build %>/js/{,*/}*.js',
             '<%= yeoman.build %>/css/{,*/}*.css',
             '<%= yeoman.build %>/img/{,*/}*.{png,jpg,jpeg,gif,webp}',
             '<%= yeoman.build %>/css/fonts/{,*/}*.*'
+=======
+            '<% yeoman.build %>/js/{,*/}*.js',
+            '<% yeoman.build %>/css/{,*/}*.css',
+            '<% yeoman.build %>/img/{,*/}*.{png,jpg,jpeg,gif,webp}',
+            '<% yeoman.build %>/css/fonts/{,*/}*.*'
+>>>>>>> first commit
           ]
         }
       }
     },
     useminPrepare: {
       options: {
+<<<<<<< HEAD
         dest: '<%= yeoman.build %>'
       },
       html: '<%= yeoman.app %>/index.html'
@@ -170,14 +227,32 @@ module.exports = function (grunt) {
       },
       html: ['<%= yeoman.build %>/{,*/}*.html'],
       css: ['<%= yeoman.build %>/css/{,*/}*.css']
+=======
+        dest: '<% yeoman.build %>'
+      },
+      html: '<% yeoman.app %>/index.html'
+    },
+    usemin: {
+      options: {
+        dirs: ['<% yeoman.build %>']
+      },
+      html: ['<% yeoman.build %>/{,*/}*.html'],
+      css: ['<% yeoman.build %>/css/{,*/}*.css']
+>>>>>>> first commit
     },
     imagemin: {
       build: {
         files: [{
           expand: true,
+<<<<<<< HEAD
           cwd: '<%= yeoman.app %>/images',
           src: '{,*/}*.{png,jpg,jpeg}',
           dest: '<%= yeoman.build %>/images'
+=======
+          cwd: '<% yeoman.app %>/images',
+          src: '{,*/}*.{png,jpg,jpeg}',
+          dest: '<% yeoman.build %>/images'
+>>>>>>> first commit
         }]
       }
     },
@@ -185,9 +260,15 @@ module.exports = function (grunt) {
       build: {
         files: [{
           expand: true,
+<<<<<<< HEAD
           cwd: '<%= yeoman.app %>/images',
           src: '{,*/}*.svg',
           dest: '<%= yeoman.build %>/images'
+=======
+          cwd: '<% yeoman.app %>/images',
+          src: '{,*/}*.svg',
+          dest: '<% yeoman.build %>/images'
+>>>>>>> first commit
         }]
       }
     },
@@ -200,9 +281,15 @@ module.exports = function (grunt) {
       //
       // build: {
       //     files: {
+<<<<<<< HEAD
       //         '<%= yeoman.build %>/css/main.css': [
       //             '.tmp/css/{,*/}*.css',
       //             '<%= yeoman.app %>/css/{,*/}*.css'
+=======
+      //         '<% yeoman.build %>/css/main.css': [
+      //             '.tmp/css/{,*/}*.css',
+      //             '<% yeoman.app %>/css/{,*/}*.css'
+>>>>>>> first commit
       //         ]
       //     }
       // }
@@ -222,9 +309,15 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
+<<<<<<< HEAD
           cwd: '<%= yeoman.app %>',
           src: '*.html',
           dest: '<%= yeoman.build %>'
+=======
+          cwd: '<% yeoman.app %>',
+          src: '*.html',
+          dest: '<% yeoman.build %>'
+>>>>>>> first commit
         }]
       }
     },
@@ -234,8 +327,13 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           dot: true,
+<<<<<<< HEAD
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.build %>',
+=======
+          cwd: '<% yeoman.app %>',
+          dest: '<% yeoman.build %>',
+>>>>>>> first commit
           src: [
             '*.{ico,png,txt}',
             '.htaccess',
@@ -248,18 +346,31 @@ module.exports = function (grunt) {
       styles: {
         expand: true,
         dot: true,
+<<<<<<< HEAD
         cwd: '<%= yeoman.app %>/css',
+=======
+        cwd: '<% yeoman.app %>/css',
+>>>>>>> first commit
         dest: '.tmp/css/',
         src: '{,*/}*.css'
       }
     },
     modernizr: {
+<<<<<<< HEAD
       devFile: '<%= yeoman.app %>/components/modernizr/modernizr.js',
       outputFile: '<%= yeoman.build %>/components/modernizr/modernizr.js',
       files: [
         '<%= yeoman.build %>/js/{,*/}*.js',
         '<%= yeoman.build %>/css/{,*/}*.css',
         '!<%= yeoman.build %>/js/vendor/*'
+=======
+      devFile: '<% yeoman.app %>/components/modernizr/modernizr.js',
+      outputFile: '<% yeoman.build %>/components/modernizr/modernizr.js',
+      files: [
+        '<% yeoman.build %>/js/{,*/}*.js',
+        '<% yeoman.build %>/css/{,*/}*.css',
+        '!<% yeoman.build %>/js/vendor/*'
+>>>>>>> first commit
       ],
       uglify: true
     },
@@ -284,7 +395,11 @@ module.exports = function (grunt) {
         exclude: ['modernizr']
       },
       all: {
+<<<<<<< HEAD
         rjsConfig: '<%= yeoman.app %>/js/main.js'
+=======
+        rjsConfig: '<% yeoman.app %>/js/main.js'
+>>>>>>> first commit
       }
     }
   });
